@@ -11,6 +11,10 @@
 		4E531D2F292C21A20055DFCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E531D2E292C21A20055DFCC /* ContentView.swift */; };
 		4E531D31292C21A40055DFCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E531D30292C21A40055DFCC /* Assets.xcassets */; };
 		4E531D34292C21A40055DFCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E531D33292C21A40055DFCC /* Preview Assets.xcassets */; };
+		4E531D3B292C24C90055DFCC /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E531D3A292C24C90055DFCC /* DisplayView.swift */; };
+		4E531D3D292C24D40055DFCC /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E531D3C292C24D40055DFCC /* WheelView.swift */; };
+		4E531D3F292C24E20055DFCC /* iPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E531D3E292C24E20055DFCC /* iPodTests.swift */; };
+		4E531D43292C25570055DFCC /* iPodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E531D42292C25570055DFCC /* iPodUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		4E531D2E292C21A20055DFCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E531D30292C21A40055DFCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E531D33292C21A40055DFCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E531D3A292C24C90055DFCC /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		4E531D3C292C24D40055DFCC /* WheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
+		4E531D3E292C24E20055DFCC /* iPodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodTests.swift; sourceTree = "<group>"; };
+		4E531D42292C25570055DFCC /* iPodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPodUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,9 @@
 			children = (
 				4E531D2C292C21A20055DFCC /* iPod_classic_TutorialApp.swift */,
 				4E531D2E292C21A20055DFCC /* ContentView.swift */,
+				4E531D40292C25130055DFCC /* Preview */,
+				4E531D41292C253C0055DFCC /* iPodTests */,
+				4E531D44292C25680055DFCC /* iPodUITests */,
 				4E531D30292C21A40055DFCC /* Assets.xcassets */,
 				4E531D32292C21A40055DFCC /* Preview Content */,
 			);
@@ -65,6 +76,31 @@
 				4E531D33292C21A40055DFCC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E531D40292C25130055DFCC /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				4E531D3A292C24C90055DFCC /* DisplayView.swift */,
+				4E531D3C292C24D40055DFCC /* WheelView.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		4E531D41292C253C0055DFCC /* iPodTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E531D3E292C24E20055DFCC /* iPodTests.swift */,
+			);
+			path = iPodTests;
+			sourceTree = "<group>";
+		};
+		4E531D44292C25680055DFCC /* iPodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E531D42292C25570055DFCC /* iPodUITests.swift */,
+			);
+			path = iPodUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E531D3B292C24C90055DFCC /* DisplayView.swift in Sources */,
+				4E531D3F292C24E20055DFCC /* iPodTests.swift in Sources */,
 				4E531D2F292C21A20055DFCC /* ContentView.swift in Sources */,
+				4E531D3D292C24D40055DFCC /* WheelView.swift in Sources */,
 				4E531D2D292C21A20055DFCC /* iPod_classic_TutorialApp.swift in Sources */,
+				4E531D43292C25570055DFCC /* iPodUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +345,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
